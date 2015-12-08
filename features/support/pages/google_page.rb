@@ -14,11 +14,11 @@ class GooglePage
   end
 
   def search_button
-    @browser.button(name: 'btnG')
+    @page_browser.button(name: 'btnG')
   end
 
   def search_result
-    @browser.divs(class: 'st').first.text
+    @page_browser.divs(class: 'st').first.text
   end
 
 end
